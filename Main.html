@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Freedom Project</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js">
+
+	</script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js">
+
+	</script>
+
+	<script>
+		// Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAXjqBirO3Jol-7i5dxhSmVu1GwivU0K1k",
+    authDomain: "freedom-project--quest.firebaseapp.com",
+    projectId: "freedom-project--quest",
+    storageBucket: "freedom-project--quest.appspot.com",
+    messagingSenderId: "467945036729",
+    appId: "1:467945036729:web:9e6c97299a9cf6c20b7468",
+    measurementId: "G-CS7RL6MVER"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+	</script>
+
+	<div>
+		<h1>To-do List</h1>
+	</div>
+	<div id="main">
+		<ul id="list">
+		</ul>
+	</div>
+	<div>
+		<div>
+			<input id="todo" type="text" class="form-input" placeholder="Add item">
+                <button id="button">+</button>
+            </div>
+            
+        </div>
+            
+        <script src="script.js"></script>
+    </body>
+</html>
