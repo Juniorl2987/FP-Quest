@@ -1,4 +1,4 @@
-document.querySelector("button").addEventListener("click",function(){
+document.querySelector("#button1").addEventListener("click",function(){
     var text = document.querySelector("#todo").value;
     var list = document.createElement("li");
     document.querySelector("#list").appendChild(list);
@@ -26,4 +26,22 @@ document.querySelector("button").addEventListener("click",function(){
     
     
 });
+
+const admin = require('firebase-admin');
+admin.initializeApp({
+  credential: admin.credential.applicationDefault()
+});
+
+const db = admin.firestore();
+
+function googleLogin() {
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider)
+        // .then(result => {
+        //     var user = result.user ;
+        //     document.write("Hello " + user.displayName);
+        //     console.log(user)
+        // })
+        // .catch(console.log)
+};
 

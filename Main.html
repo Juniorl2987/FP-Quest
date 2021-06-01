@@ -9,32 +9,42 @@
 </head>
 
 <body>
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <button onclick="googleLogin()">
+        Login with Google
+    </button>
+	<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js">
-
 	</script>
 
-	<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
 	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js">
-
 	</script>
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js">
+	</script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js">
+	</script>
+	<!-- Previously loaded Firebase SDKs -->
 
 	<script>
-		// Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyAXjqBirO3Jol-7i5dxhSmVu1GwivU0K1k",
-    authDomain: "freedom-project--quest.firebaseapp.com",
-    projectId: "freedom-project--quest",
-    storageBucket: "freedom-project--quest.appspot.com",
-    messagingSenderId: "467945036729",
-    appId: "1:467945036729:web:9e6c97299a9cf6c20b7468",
-    measurementId: "G-CS7RL6MVER"
+		// TODO: Replace the following with your app's Firebase project configuration
+    // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
+    var firebaseConfig = {
+    apiKey: "AIzaSyBXjX-3cGo0znxEPee6-h12n-tJB2blyuA",
+    authDomain: "quest-fp.firebaseapp.com",
+    projectId: "quest-fp",
+    storageBucket: "quest-fp.appspot.com",
+    messagingSenderId: "75434967876",
+    appId: "1:75434967876:web:a324430bb4d1d5ec5dcd11",
+    measurementId: "G-9MG54LD6CQ"
   };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
 	</script>
 
 	<div>
@@ -47,7 +57,7 @@
 	<div>
 		<div>
 			<input id="todo" type="text" class="form-input" placeholder="Add item">
-                <button id="button">+</button>
+                <button id="button1">+</button>
             </div>
             
         </div>
